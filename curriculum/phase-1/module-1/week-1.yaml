@@ -1,0 +1,171 @@
+id: week-1
+phase_id: phase-1
+module_id: phase-1-module-1
+week_number: 1
+title: Engineering Foundations
+theme: Understand before building
+weekly_objective: >
+  Complete the weekly project: Laser Tripwire Understanding Pack.
+why_this_week_matters: >
+  This week builds practical engineering capability through one focused portfolio project.
+weekly_project:
+  id: laser-tripwire-understanding-pack
+  title: Laser Tripwire Understanding Pack
+  difficulty: beginner-plus
+  estimated_hours: 7
+  deliverable: >
+    A documented portfolio project: Laser Tripwire Understanding Pack.
+skills_unlocked:
+  - Git basics
+  - GitHub commits
+  - Engineering notebook
+  - Reading code
+  - ADC concept
+  - Voltage divider concept
+  - Threshold logic
+  - Buzzer output
+hardware_required:
+  - Raspberry Pi Pico 2 WH
+  - Breadboard
+  - Jumper wires
+  - Weekly components as listed in mission content
+missions:
+  - id: m1-w1-001
+    mission_number: 1
+    title: Start Like an Engineer
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Set up your learning workspace and create your first engineering notebook entry.
+    why_this_matters: Professional engineers document decisions, not just results.
+    theory: Understand the difference between a project folder, Git repository, README, and notebook.
+    coding: Create a small MicroPython sanity-check script that prints a startup message over serial.
+    hardware: Connect the Pico and confirm your VS Code Pico workflow still works.
+    challenge: Add the current mission number and date to the serial output.
+    notebook: Record your setup, what worked, what failed, and your first questions.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Start Like an Engineer."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w1-002
+    mission_number: 2
+    title: Git From Day One
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Learn the basic Git workflow you will use for every project.
+    why_this_matters: Your portfolio needs version history, not just final files.
+    theory: Learn repository, commit, status, add, push, and README.
+    coding: Create or update a README for your Week 1 work.
+    hardware: No new circuit; keep the Pico connected only for sanity testing.
+    challenge: Make three small commits with meaningful messages.
+    notebook: Write why each commit matters.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Git From Day One."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w1-003
+    mission_number: 3
+    title: Read the Tripwire Circuit
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Understand the LDR voltage-divider circuit from your Laser Tripwire.
+    why_this_matters: Sensors are how robots perceive the world.
+    theory: Learn why the Pico cannot measure resistance directly and why a voltage divider converts light changes into voltage changes.
+    coding: Run or write a tiny script that prints ldr.read_u16() continuously.
+    hardware: Rebuild or inspect the LDR + 10k resistor + GP26 circuit.
+    challenge: Record laser-on and laser-blocked readings.
+    notebook: Draw the circuit in your own words and label 3V3, GP26, and GND.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Read the Tripwire Circuit."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w1-004
+    mission_number: 4
+    title: Decode the Core Sensing Loop
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Explain the ADC read → threshold → decision part of your existing code.
+    why_this_matters: Robots constantly convert sensor readings into decisions.
+    theory: Learn threshold logic, booleans, and why sensor values need calibration.
+    coding: "Rewrite only the sensing part from memory: read value, compare threshold, print blocked or clear."
+    hardware: Test with the laser and LDR.
+    challenge: Change the threshold and predict what will happen before running it.
+    notebook: Explain every line of the sensing loop in plain English.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Decode the Core Sensing Loop."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w1-005
+    mission_number: 5
+    title: Decode the Buzzer Output
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Understand how the Pico controls an active buzzer.
+    why_this_matters: Outputs are how embedded systems affect the physical world.
+    theory: Learn digital output, HIGH/LOW, active buzzers, and why no PWM is needed for this buzzer.
+    coding: "Write a small buzzer test: on, wait, off."
+    hardware: Wire the active buzzer to the Pico safely.
+    challenge: Create two alarm patterns using timing.
+    notebook: Explain the difference between input and output pins.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Decode the Buzzer Output."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w1-006
+    mission_number: 6
+    title: State Variables and the 5-Second Alarm
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Understand why the tripwire uses a state variable and timer logic.
+    why_this_matters: "State is central to robot behaviour: idle, moving, avoiding, charging, stopped."
+    theory: Learn state variables, non-blocking timing, and why time.ticks_ms() is better than sleep(5) for responsive systems.
+    coding: Recreate the buzzing state logic in a simplified file.
+    hardware: Test that the buzzer stays on for five seconds after triggering.
+    challenge: Change the alarm duration using a constant.
+    notebook: "Draw the states: idle → alarm → reset."
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: State Variables and the 5-Second Alarm."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w1-007
+    mission_number: 7
+    title: Publish the Understanding Pack
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Turn your learning into a professional portfolio update.
+    why_this_matters: Engineers communicate their work clearly so others can build on it.
+    theory: Learn what makes a useful README and lessons-learned section.
+    coding: Clean up code snippets and comments from this week.
+    hardware: Take one clear photo of the circuit or redraw it neatly.
+    challenge: Add a Future Improvements section with at least three ideas.
+    notebook: "Write your weekly review: what you understand now that you did not understand before."
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Publish the Understanding Pack."
+      - Quiz me on the key ideas from this mission.
+engineering_review:
+  questions:
+    - What did I learn this week?
+    - What can I build now that I could not build before?
+    - Which part of the project was hardest?
+    - What would I improve in version 2?

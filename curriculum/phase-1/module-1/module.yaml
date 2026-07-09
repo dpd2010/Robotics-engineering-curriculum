@@ -1,0 +1,77 @@
+id: phase-1-module-1
+phase_id: phase-1
+module_number: 1
+title: Thinking Like an Engineer
+subtitle: Software meets hardware
+duration_weeks: 6
+estimated_total_hours: 42
+level_title: Engineer in Training
+mission_statement: >
+  Learn how software controls hardware while developing professional engineering
+  habits: Git, documentation, debugging, notebooks, state machines, sensors,
+  inputs, outputs, and project publishing.
+robotics_connection: >
+  Every robot is a system that reads inputs, makes decisions, and controls outputs.
+  This module teaches the first version of that loop using the Raspberry Pi Pico:
+  sensors, buttons, LEDs, buzzers, timing, state, and documentation.
+identity_unlocked: Embedded Explorer
+time_commitment:
+  daily_minutes: 60
+  default_split:
+    computer_science: 40
+    hardware: 15
+    notebook: 5
+hardware_introduced:
+  - Raspberry Pi Pico 2 WH
+  - Breadboard
+  - LEDs
+  - 220 ohm resistors
+  - Push buttons
+  - Active buzzer
+  - LDR/photoresistor
+  - 10k resistor
+  - RGB LED
+  - LCD1602
+core_skills:
+  - Git and GitHub basics
+  - Engineering notebook habit
+  - Reading existing code
+  - GPIO output
+  - GPIO input
+  - ADC readings
+  - Voltage dividers
+  - Thresholds and calibration
+  - State variables
+  - Finite state machines
+  - Interrupt-style thinking
+  - Debugging and documentation
+module_capstone:
+  id: embedded-engineering-console
+  title: Embedded Engineering Console
+  difficulty: beginner-plus
+  estimated_hours: 6
+  description: >
+    A polished Pico-based console combining LEDs, buttons, a buzzer, sensor
+    readings, menu-style behaviour, state-machine logic, and professional
+    documentation.
+  required_features:
+    - Menu or mode system
+    - At least one input
+    - At least two outputs
+    - Sensor reading
+    - Clear state-machine structure
+    - GitHub README
+    - Demo video or photos
+weeks:
+  - week-1
+  - week-2
+  - week-3
+  - week-4
+  - week-5
+  - week-6
+completion_criteria:
+  - All 6 weekly projects are completed or documented honestly if incomplete.
+  - At least 4 GitHub repositories or project folders are published.
+  - Every completed project has a README, wiring notes, and lessons learned.
+  - The learner can explain every line of code in the Laser Tripwire sensing loop.
+  - The learner can explain GPIO, ADC, thresholding, state variables, and finite state machines.

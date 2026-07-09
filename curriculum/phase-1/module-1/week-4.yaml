@@ -1,0 +1,168 @@
+id: week-4
+phase_id: phase-1
+module_id: phase-1-module-1
+week_number: 4
+title: Smart Pedestrian Crossing Controller
+theme: Events, buttons, timers, and non-blocking behaviour
+weekly_objective: >
+  Complete the weekly project: Smart Pedestrian Crossing Controller.
+why_this_week_matters: >
+  This week builds practical engineering capability through one focused portfolio project.
+weekly_project:
+  id: smart-pedestrian-crossing-controller
+  title: Smart Pedestrian Crossing Controller
+  difficulty: beginner-plus
+  estimated_hours: 7
+  deliverable: >
+    A documented portfolio project: Smart Pedestrian Crossing Controller.
+skills_unlocked:
+  - Button events
+  - Debouncing concept
+  - Interrupt-driven thinking
+  - Non-blocking timers
+  - State transitions with external input
+hardware_required:
+  - Raspberry Pi Pico 2 WH
+  - Breadboard
+  - Jumper wires
+  - Weekly components as listed in mission content
+missions:
+  - id: m1-w4-022
+    mission_number: 22
+    title: Add a Pedestrian Button
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Add a button request to the traffic light system.
+    why_this_matters: External events change system behaviour.
+    theory: Learn requests vs immediate actions.
+    coding: Add pedestrian_request variable.
+    hardware: Wire and test button.
+    challenge: Print a message when request is detected.
+    notebook: Explain request state.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Add a Pedestrian Button."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w4-023
+    mission_number: 23
+    title: Debouncing and Reliable Input
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Understand why one press can look like many presses.
+    why_this_matters: Real hardware is noisy.
+    theory: Learn button bounce and simple debounce timing.
+    coding: Add a debounce delay or timestamp filter.
+    hardware: Test repeated presses.
+    challenge: Compare before and after debounce.
+    notebook: Describe bounce in your own words.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Debouncing and Reliable Input."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w4-024
+    mission_number: 24
+    title: Interrupt-Driven Button Thinking
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Learn the idea of responding to input without constantly waiting for it.
+    why_this_matters: Robots cannot freeze while waiting for a button or sensor.
+    theory: Learn interrupt callbacks conceptually and implement if supported in your environment.
+    coding: Use callback/event style if possible, otherwise simulate with clean event polling.
+    hardware: Test responsiveness during light sequence.
+    challenge: Record whether your system misses button presses.
+    notebook: Compare polling, debounce, and interrupt-style handling.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Interrupt-Driven Button Thinking."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w4-025
+    mission_number: 25
+    title: Add Crossing States
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Add walk and do-not-walk behaviours.
+    why_this_matters: System behaviour becomes clear when states are named.
+    theory: Learn state expansion.
+    coding: Add WAITING, WALK, CLEARING or equivalent states.
+    hardware: Use LEDs and buzzer for crossing feedback.
+    challenge: Draw the updated state diagram.
+    notebook: Explain each state.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Add Crossing States."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w4-026
+    mission_number: 26
+    title: Buzzer Feedback
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Use buzzer patterns to communicate crossing status.
+    why_this_matters: Robots and devices need understandable feedback.
+    theory: Learn feedback design.
+    coding: Add slow/fast beep patterns.
+    hardware: Test buzzer with states.
+    challenge: Make the beep speed change near the end.
+    notebook: Explain why feedback matters.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Buzzer Feedback."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w4-027
+    mission_number: 27
+    title: System Test
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Test the whole crossing like an engineer.
+    why_this_matters: Integration is where hidden bugs appear.
+    theory: Learn basic test cases.
+    coding: Add serial logs for states and requests.
+    hardware: Run multiple crossing cycles.
+    challenge: Write five test cases and run them.
+    notebook: Record pass/fail results.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: System Test."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w4-028
+    mission_number: 28
+    title: Publish the Crossing Controller
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Document and publish the project.
+    why_this_matters: This is your first event-driven state-machine portfolio project.
+    theory: Learn how to document system behaviour.
+    coding: Clean final version.
+    hardware: Add photo/diagram.
+    challenge: Add a state diagram image or table.
+    notebook: Weekly review.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Publish the Crossing Controller."
+      - Quiz me on the key ideas from this mission.
+engineering_review:
+  questions:
+    - What did I learn this week?
+    - What can I build now that I could not build before?
+    - Which part of the project was hardest?
+    - What would I improve in version 2?

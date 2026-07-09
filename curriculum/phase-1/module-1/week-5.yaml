@@ -1,0 +1,169 @@
+id: week-5
+phase_id: phase-1
+module_id: phase-1-module-1
+week_number: 5
+title: Intelligent Light Security System
+theme: Sensors, calibration, and robust decisions
+weekly_objective: >
+  Complete the weekly project: Intelligent Light Security System.
+why_this_week_matters: >
+  This week builds practical engineering capability through one focused portfolio project.
+weekly_project:
+  id: intelligent-light-security-system
+  title: Intelligent Light Security System
+  difficulty: beginner-plus
+  estimated_hours: 7
+  deliverable: >
+    A documented portfolio project: Intelligent Light Security System.
+skills_unlocked:
+  - ADC review
+  - Sensor calibration
+  - Threshold design
+  - Modes
+  - RGB/status output
+  - Robust decision logic
+hardware_required:
+  - Raspberry Pi Pico 2 WH
+  - Breadboard
+  - Jumper wires
+  - Weekly components as listed in mission content
+missions:
+  - id: m1-w5-029
+    mission_number: 29
+    title: Sensor Baseline
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Record stable light readings and understand noise.
+    why_this_matters: Sensors fluctuate; software must handle uncertainty.
+    theory: Learn baseline, noise, and sampling.
+    coding: Print repeated ADC readings and calculate simple min/max manually or in code.
+    hardware: Build LDR voltage divider.
+    challenge: Record readings in three lighting conditions.
+    notebook: Create a small table of readings.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Sensor Baseline."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w5-030
+    mission_number: 30
+    title: Calibration Mode
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Create a calibration step that records normal light level.
+    why_this_matters: Fixed thresholds fail when the environment changes.
+    theory: Learn relative thresholding.
+    coding: Store baseline = current reading.
+    hardware: Test in different rooms or lighting.
+    challenge: Set trigger threshold based on baseline difference.
+    notebook: Explain why calibration beats a magic number.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Calibration Mode."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w5-031
+    mission_number: 31
+    title: Armed and Disarmed Modes
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Add modes to control whether the alarm can trigger.
+    why_this_matters: Robot systems often have safe, active, and error modes.
+    theory: Learn mode variables and mode transitions.
+    coding: Add ARMED and DISARMED states.
+    hardware: Use button to switch modes.
+    challenge: Add serial output showing current mode.
+    notebook: Draw mode diagram.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Armed and Disarmed Modes."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w5-032
+    mission_number: 32
+    title: Status Feedback
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Use LEDs or RGB LED to show system status.
+    why_this_matters: Good systems make their state visible.
+    theory: Learn status indicators.
+    coding: Map colours or LEDs to disarmed, armed, and alarm states.
+    hardware: Wire RGB or multiple LEDs.
+    challenge: Add blinking armed indicator.
+    notebook: Explain your status design.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Status Feedback."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w5-033
+    mission_number: 33
+    title: Alarm Logic
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Combine sensor, calibration, mode, and buzzer into one system.
+    why_this_matters: Integration is the essence of embedded systems.
+    theory: Learn decision logic and false positives.
+    coding: Trigger alarm only when armed and light change exceeds threshold.
+    hardware: Test with hand/laser/light source.
+    challenge: Add alarm cooldown.
+    notebook: Explain the final if conditions.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Alarm Logic."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w5-034
+    mission_number: 34
+    title: Robustness Pass
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Improve reliability through constants, functions, and testing.
+    why_this_matters: Engineering means making systems reliable beyond one demo.
+    theory: Learn simple robustness checklist.
+    coding: "Refactor into functions: calibrate(), arm(), disarm(), check_sensor(), trigger_alarm()."
+    hardware: Run repeated tests.
+    challenge: Test in two lighting conditions.
+    notebook: Record test results.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Robustness Pass."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w5-035
+    mission_number: 35
+    title: Publish the Security System
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Publish the improved light security project.
+    why_this_matters: This shows growth from your first tripwire project.
+    theory: Learn comparison-based portfolio writing.
+    coding: Clean final code.
+    hardware: Add photos/diagram.
+    challenge: Include a section called How This Improves My First Tripwire.
+    notebook: Weekly review.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Publish the Security System."
+      - Quiz me on the key ideas from this mission.
+engineering_review:
+  questions:
+    - What did I learn this week?
+    - What can I build now that I could not build before?
+    - Which part of the project was hardest?
+    - What would I improve in version 2?

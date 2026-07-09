@@ -1,0 +1,168 @@
+id: week-3
+phase_id: phase-1
+module_id: phase-1-module-1
+week_number: 3
+title: Smart Traffic Light Controller
+theme: Functions and finite state machines
+weekly_objective: >
+  Complete the weekly project: Smart Traffic Light Controller.
+why_this_week_matters: >
+  This week builds practical engineering capability through one focused portfolio project.
+weekly_project:
+  id: smart-traffic-light-controller
+  title: Smart Traffic Light Controller
+  difficulty: beginner-plus
+  estimated_hours: 7
+  deliverable: >
+    A documented portfolio project: Smart Traffic Light Controller.
+skills_unlocked:
+  - Multiple GPIO outputs
+  - Function decomposition
+  - Finite state machines
+  - Timing sequences
+  - State diagrams
+hardware_required:
+  - Raspberry Pi Pico 2 WH
+  - Breadboard
+  - Jumper wires
+  - Weekly components as listed in mission content
+missions:
+  - id: m1-w3-015
+    mission_number: 15
+    title: Wire Three Outputs
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Control red, yellow, and green LEDs independently.
+    why_this_matters: Robots often control many outputs at once.
+    theory: Review multiple GPIO outputs and pin naming.
+    coding: Write red_on(), yellow_on(), green_on(), all_off().
+    hardware: Wire three LEDs safely.
+    challenge: Create a test sequence.
+    notebook: Draw the pin map.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Wire Three Outputs."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w3-016
+    mission_number: 16
+    title: Build Clean Functions
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Reduce repeated code using functions.
+    why_this_matters: Clean code is easier to debug when hardware gets complex.
+    theory: Learn abstraction and meaningful function names.
+    coding: Create set_lights(red, yellow, green).
+    hardware: Test all light combinations.
+    challenge: Add a function for UK-style traffic sequence.
+    notebook: Explain why repeated code is risky.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Build Clean Functions."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w3-017
+    mission_number: 17
+    title: What Is a State?
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Learn finite state machines by modelling traffic light states.
+    why_this_matters: Robot behaviours are often state machines.
+    theory: Learn state, transition, event, and action.
+    coding: Represent states as constants or strings.
+    hardware: Map each state to LED outputs.
+    challenge: Draw a state diagram.
+    notebook: Explain idle, active, and transition states.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: What Is a State?."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w3-018
+    mission_number: 18
+    title: Timed State Transitions
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Move from one state to another using time.
+    why_this_matters: Autonomous systems need predictable timing.
+    theory: Learn timed transitions.
+    coding: Implement red → red_yellow → green → yellow → red.
+    hardware: Test full cycle.
+    challenge: Make timings constants at the top.
+    notebook: Explain why constants are better than magic numbers.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Timed State Transitions."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w3-019
+    mission_number: 19
+    title: Debugging Hardware Sequences
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Learn a structured debugging process for hardware output bugs.
+    why_this_matters: Most robotics debugging is systematic observation.
+    theory: Learn isolate, test, observe, change one thing.
+    coding: Add serial prints for current state.
+    hardware: Verify each LED and resistor.
+    challenge: Intentionally create and fix one bug.
+    notebook: Record the bug and fix.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Debugging Hardware Sequences."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w3-020
+    mission_number: 20
+    title: Make It Robust
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Improve reliability and readability.
+    why_this_matters: Engineering is not just getting it to work once.
+    theory: Learn simple code review checklist.
+    coding: Refactor names, constants, comments, and structure.
+    hardware: Run the controller for several minutes.
+    challenge: Add a night mode blink pattern.
+    notebook: Write what changed and why.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Make It Robust."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w3-021
+    mission_number: 21
+    title: Publish the Traffic Controller
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Publish the Smart Traffic Light Controller as a portfolio project.
+    why_this_matters: State-machine projects are excellent interview examples.
+    theory: Learn how to explain a state diagram in a README.
+    coding: Clean final code.
+    hardware: Photograph or diagram wiring.
+    challenge: Add a state table to the README.
+    notebook: Weekly reflection.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Publish the Traffic Controller."
+      - Quiz me on the key ideas from this mission.
+engineering_review:
+  questions:
+    - What did I learn this week?
+    - What can I build now that I could not build before?
+    - Which part of the project was hardest?
+    - What would I improve in version 2?

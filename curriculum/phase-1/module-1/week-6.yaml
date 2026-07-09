@@ -1,0 +1,168 @@
+id: week-6
+phase_id: phase-1
+module_id: phase-1-module-1
+week_number: 6
+title: Engineering Portfolio Sprint
+theme: Improve, refactor, document, and present
+weekly_objective: >
+  Complete the weekly project: Module 1 Portfolio Snapshot.
+why_this_week_matters: >
+  This week builds practical engineering capability through one focused portfolio project.
+weekly_project:
+  id: module-1-portfolio-snapshot
+  title: Module 1 Portfolio Snapshot
+  difficulty: beginner-plus
+  estimated_hours: 7
+  deliverable: >
+    A documented portfolio project: Module 1 Portfolio Snapshot.
+skills_unlocked:
+  - Refactoring basics
+  - Documentation improvement
+  - Portfolio presentation
+  - Project comparison
+  - Engineering review
+hardware_required:
+  - Raspberry Pi Pico 2 WH
+  - Breadboard
+  - Jumper wires
+  - Weekly components as listed in mission content
+missions:
+  - id: m1-w6-036
+    mission_number: 36
+    title: Project Audit
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Review every Module 1 project honestly.
+    why_this_matters: Engineers inspect work before improving it.
+    theory: "Learn audit checklist: works, documented, understandable, reproducible."
+    coding: List code issues in each project.
+    hardware: Test which projects still run.
+    challenge: Rank projects by portfolio quality.
+    notebook: Create Module 1 audit table.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Project Audit."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w6-037
+    mission_number: 37
+    title: Refactor One Project
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Improve one project without changing its behaviour.
+    why_this_matters: Refactoring is a core professional skill.
+    theory: Learn behaviour-preserving improvement.
+    coding: Refactor functions, names, constants, comments.
+    hardware: Confirm it still works.
+    challenge: Compare before and after code.
+    notebook: Explain what changed and why.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Refactor One Project."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w6-038
+    mission_number: 38
+    title: Documentation Upgrade
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Improve README quality for one or more projects.
+    why_this_matters: Good documentation lets others reproduce your work.
+    theory: "Learn README sections: overview, components, wiring, code, testing, lessons."
+    coding: Add or improve README content.
+    hardware: Add photos or wiring notes.
+    challenge: Add a troubleshooting section.
+    notebook: Record what makes a good README.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Documentation Upgrade."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w6-039
+    mission_number: 39
+    title: Add a Stretch Feature
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Add one useful feature to a previous project.
+    why_this_matters: Iteration turns tutorials into engineering projects.
+    theory: Learn small-scope feature design.
+    coding: Choose one feature and implement it.
+    hardware: Test feature.
+    challenge: Keep the change small and reliable.
+    notebook: Write the feature requirement before coding.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Add a Stretch Feature."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w6-040
+    mission_number: 40
+    title: Prepare Demo Evidence
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Create visual proof of your work.
+    why_this_matters: Portfolio reviewers need to see that projects are real.
+    theory: Learn demo video/photo basics.
+    coding: No major coding; final cleanup only.
+    hardware: Record short demos or take clear photos.
+    challenge: Make a 30-second explanation script.
+    notebook: Save links or filenames.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Prepare Demo Evidence."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w6-041
+    mission_number: 41
+    title: Capstone Design Brief
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Design the Embedded Engineering Console before building it.
+    why_this_matters: Engineers plan systems before wiring everything together.
+    theory: Learn requirements and architecture at a beginner level.
+    coding: Sketch possible file/function structure.
+    hardware: Choose components for the capstone.
+    challenge: Define minimum viable version and stretch version.
+    notebook: Write the design brief.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Capstone Design Brief."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w6-042
+    mission_number: 42
+    title: Module 1 Review and Graduation
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Reflect on Module 1 and prepare for Module 2.
+    why_this_matters: Reflection converts activity into learning.
+    theory: Review GPIO, ADC, buttons, states, timers, Git, and documentation.
+    coding: Final commits and cleanup.
+    hardware: Optional final test of favourite project.
+    challenge: Answer the engineering review questions without notes.
+    notebook: "Write: What can I build now that I could not build six weeks ago?"
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Module 1 Review and Graduation."
+      - Quiz me on the key ideas from this mission.
+engineering_review:
+  questions:
+    - What did I learn this week?
+    - What can I build now that I could not build before?
+    - Which part of the project was hardest?
+    - What would I improve in version 2?

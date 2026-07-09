@@ -1,0 +1,169 @@
+id: week-2
+phase_id: phase-1
+module_id: phase-1-module-1
+week_number: 2
+title: Human Reaction Analysis System
+theme: Timing, inputs, and outputs
+weekly_objective: >
+  Complete the weekly project: Human Reaction Analysis System.
+why_this_week_matters: >
+  This week builds practical engineering capability through one focused portfolio project.
+weekly_project:
+  id: human-reaction-analysis-system
+  title: Human Reaction Analysis System
+  difficulty: beginner-plus
+  estimated_hours: 7
+  deliverable: >
+    A documented portfolio project: Human Reaction Analysis System.
+skills_unlocked:
+  - Random delay
+  - Button input
+  - LED output
+  - Timing measurement
+  - Interrupt-style input thinking
+  - Best-score tracking
+hardware_required:
+  - Raspberry Pi Pico 2 WH
+  - Breadboard
+  - Jumper wires
+  - Weekly components as listed in mission content
+missions:
+  - id: m1-w2-008
+    mission_number: 8
+    title: Build the Output Signal
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Wire and control the LED that will tell the user when to react.
+    why_this_matters: Robots use indicators and signals to communicate state.
+    theory: Review GPIO output and current-limiting resistors.
+    coding: Write functions led_on(), led_off(), and blink().
+    hardware: Wire one LED with a 220 ohm resistor.
+    challenge: Create three blink patterns.
+    notebook: Explain why the resistor is required.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Build the Output Signal."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w2-009
+    mission_number: 9
+    title: Add the Reaction Button
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Wire a button and detect presses.
+    why_this_matters: Buttons are the simplest example of an external event.
+    theory: Learn pull-up/pull-down logic and button bounce at a basic level.
+    coding: Print pressed/released states to serial.
+    hardware: Wire one button to a GPIO input.
+    challenge: Reverse the logic and explain why it changes.
+    notebook: Draw the button circuit.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Add the Reaction Button."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w2-010
+    mission_number: 10
+    title: Measure Time
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Use ticks_ms() to measure elapsed time.
+    why_this_matters: Timing is essential for control loops, sensors, and event handling.
+    theory: Learn start time, end time, elapsed time, and why timers beat guessing.
+    coding: Write a small stopwatch that measures how long until the button is pressed.
+    hardware: Use the button circuit from Mission 9.
+    challenge: Print reaction time in milliseconds and seconds.
+    notebook: Explain elapsed time using an example.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Measure Time."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w2-011
+    mission_number: 11
+    title: Add Random Waiting
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Add unpredictability so the user cannot anticipate the LED.
+    why_this_matters: Real systems often wait for unpredictable external events.
+    theory: Learn random delay and false-start prevention.
+    coding: Use a random delay before turning the LED on.
+    hardware: LED + button circuit.
+    challenge: Detect if the button is pressed too early.
+    notebook: Explain why random timing makes the measurement fair.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Add Random Waiting."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w2-012
+    mission_number: 12
+    title: Interrupt-Style Thinking
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Understand why blocking code can miss events and how interrupts solve that problem.
+    why_this_matters: Robots must react while doing other work.
+    theory: Learn the idea of interrupts and event-driven input, even if implementation remains simple.
+    coding: Refactor the reaction tester to reduce blocking where possible.
+    hardware: Test repeated trials.
+    challenge: Add a variable that records the latest button event.
+    notebook: Compare polling and interrupts in your own words.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Interrupt-Style Thinking."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w2-013
+    mission_number: 13
+    title: Feedback and Best Score
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Add buzzer feedback and best-score tracking.
+    why_this_matters: Embedded devices need to communicate results clearly.
+    theory: Learn constants, score variables, and user feedback.
+    coding: Add best_score and buzzer success/error patterns.
+    hardware: Add the active buzzer.
+    challenge: Create different buzzer patterns for fast and slow reactions.
+    notebook: Explain how your program stores the best score.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Feedback and Best Score."
+      - Quiz me on the key ideas from this mission.
+  - id: m1-w2-014
+    mission_number: 14
+    title: Publish Project Version 1
+    duration_minutes: 60
+    difficulty: beginner
+    objective: Document and publish the Human Reaction Analysis System.
+    why_this_matters: Portfolio projects need clear explanation, not just working code.
+    theory: Learn project README structure.
+    coding: Clean comments and constants.
+    hardware: Take a photo or make a wiring diagram.
+    challenge: Add a Known Limitations section.
+    notebook: Write what you would improve in Version 2.
+    success_criteria:
+      - Mission objective is completed.
+      - Notes are written in the engineering notebook.
+      - Code or documentation is committed if relevant.
+    ai_tutor_prompts:
+      - "Explain this mission topic to me: Publish Project Version 1."
+      - Quiz me on the key ideas from this mission.
+engineering_review:
+  questions:
+    - What did I learn this week?
+    - What can I build now that I could not build before?
+    - Which part of the project was hardest?
+    - What would I improve in version 2?
